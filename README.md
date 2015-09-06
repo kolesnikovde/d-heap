@@ -5,11 +5,13 @@
 ### Usage
 
 ```js
+var DHeap = require('d-heap');
+
 var sample = [2, 5, 6, 9, 14, 1, 3, 4, 7, 8, 15, 13, 10, 11, 12, 16];
 
 // 4-ary max-heap
 var heap = new DHeap(sample);
-console.log(heap.items)
+console.log(heap.items);
 // [16, 7, 15, 12, 14, 1, 3, 4, 5, 8, 6, 13, 10, 11, 2, 9]
 
 // Custom arity
