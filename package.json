@@ -1,0 +1,23 @@
+{
+  "name": "d-heap",
+  "version": "1.0.0",
+  "description": "D-ary heap implementation.",
+  "author": "Danil Kolesnikov <kolesnikovde@gmail.com>",
+  "homepage": "https://github.com/kolesnikovde/d-heap",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kolesnikovde/d-heap.git"
+  },
+  "keywords": [
+    "heap",
+    "sort"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "2.3.0"
+  }
+}
