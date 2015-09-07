@@ -2,6 +2,10 @@
 
 [D-ary heap](https://en.wikipedia.org/wiki/D-ary_heap) implementation.
 
+### Installation
+
+    $ npm i d-heap
+
 ### Usage
 
 ```js
@@ -29,11 +33,14 @@ console.log(heap.items);
 ### API
 
 ```js
-sort()                 // Performs heapsort.
-update(position, item) // Updates item at given position.
-insert(item)           // Appends item and rebuild heap.
-peek()                 // Returns top-most item.
-pop()                  // Extracts top-most item from heap.
+new DHeap(items, options) // Options:
+                          //   arity - heap arity, optional,
+                          //   compare - comparator, optional.
+sort()                    // Performs heapsort.
+update(position, item)    // Updates item at given position.
+insert(item)              // Appends item and rebuild heap.
+peek()                    // Returns top-most item.
+pop()                     // Extracts top-most item from heap.
 ```
 
 ### License
