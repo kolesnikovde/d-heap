@@ -70,22 +70,23 @@ proto.sort = function() {
   return heap;
 };
 
-proto.update = function(i, item) {
+proto.update = function(idx, item) {
   var heap = this.items,
       cmp = this.compare,
       arity = this.arity,
-      prev = heap[i];
+      prev = heap[idx],
+      parent;
 
-  heap[i] = item;
+  heap[idx] = item;
 
   if (cmp(prev, item) > 0) {
-    this.heapify(i);
+    this.heapify(idx);
   } else {
-    while (i && cmp(heap[i], heap[parent = ~~(i / arity)]) > 0) {
+    while (idx && cmp(heap[idx], heap[parent = ~~(idx / arity)]) > 0) {
       var tmp = heap[parent];
-      heap[parent] = heap[i];
-      heap[i] = tmp;
-      i = parent;
+      heap[parent] = heap[idx];
+      heap[idx] = tmp;
+      idx = parent;
     }
   }
 
