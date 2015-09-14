@@ -43,6 +43,12 @@ peek()                    // Returns top-most item.
 pop()                     // Extracts top-most item from heap.
 ```
 
+### Performance
+
+TL;DR
+
+![Chart](https://raw.githubusercontent.com/kolesnikovde/d-heap/master/benchmark/chart.png)
+
 ### License
 
 MIT
