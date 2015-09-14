@@ -1,6 +1,6 @@
 {
   "name": "d-heap",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "D-ary heap implementation.",
   "author": "Danil Kolesnikov <kolesnikovde@gmail.com>",
   "homepage": "https://github.com/kolesnikovde/d-heap",
