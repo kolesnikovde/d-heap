@@ -46,13 +46,13 @@ proto.heapify = function(start, end) {
     heap[idx] = tmp;
     start = idx;
   }
-};
+}
 
 proto.rebuild = function() {
   for (var i = ~~(this.items.length / this.arity); i >= 0; --i) {
     this.heapify(i);
   }
-};
+}
 
 proto.sort = function() {
   var heap = this.items,
@@ -68,7 +68,7 @@ proto.sort = function() {
   }
 
   return heap;
-};
+}
 
 proto.update = function(idx, item) {
   var heap = this.items,
@@ -91,25 +91,26 @@ proto.update = function(idx, item) {
   }
 
   return item;
-};
+}
 
 proto.insert = function(item) {
   return this.update(this.items.length, item);
-};
+}
 
 proto.peek = function() {
   return this.items[0];
-};
+}
 
 proto.pop = function() {
   var heap = this.items;
 
   if (heap.length < 2) {
     return heap.pop();
-  } else {
-    var root = heap[0];
-    heap[0] = heap.pop();
-    this.heapify();
-    return root;
   }
-};
+
+  var root = heap[0];
+  heap[0] = heap.pop();
+  this.heapify();
+
+  return root;
+}
